@@ -1,13 +1,25 @@
 {
-	"networks": {
-		"emulator": "127.0.0.1:3569",
-		"mainnet": "access.mainnet.nodes.onflow.org:9000",
-		"testnet": "access.devnet.nodes.onflow.org:9000"
-	},
-	"accounts": {
-		"emulator-account": {
-			"address": "f8d6e0586b0a20c7",
-			"key": "d81ddc5e8e0b98b125493a2caa2c02f5df8e516d5585d661fa10ddfff70abad4"
-		}
-	}
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "f8d6e0586b0a20c7",
+      "key": "d81ddc5e8e0b98b125493a2caa2c02f5df8e516d5585d661fa10ddfff70abad4"
+    },
+    "my-testnet-account": {
+      "address": "0x4158f5ec9952f5b9",
+      "key": "40e34dcf0d6a03a6c61e61d1c3612c0a4a7152c3e26bb81bbb09f292617340eb"
+    }
+  },
+  "contracts": {
+    "EpisodeNFT": "./contracts/EpisodeNFT.cdc"
+  },
+  "deployments": {
+    "testnet": {
+      "my-testnet-account": ["EpisodeNFT"]
+    }
+  }
 }
