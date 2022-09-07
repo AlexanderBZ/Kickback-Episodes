@@ -15,11 +15,19 @@
     }
   },
   "contracts": {
+    "FungibleToken": "./contracts/FungibleToken.cdc",
+    "MetadataViews": "./contracts/MetadataViews.cdc",
+    "NonFungibleToken": "./contracts/NonFungibleToken.cdc",
     "EpisodeNFT": "./contracts/EpisodeNFT.cdc"
   },
   "deployments": {
     "testnet": {
-      "my-testnet-account": ["EpisodeNFT"]
+      "my-testnet-account": [
+        "FungibleToken",
+        "MetadataViews",
+        "NonFungibleToken",
+        "EpisodeNFT"
+      ]
     }
   }
 }
